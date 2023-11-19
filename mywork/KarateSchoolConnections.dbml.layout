@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="KarateSchoolConnections">
+  <DataContextMoniker Name="/KarateSchoolConnectionsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="29bbf50d-8a46-493d-9a43-87f888391e9a" absoluteBounds="1.625, 1.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/KarateSchoolConnectionsDataContext/Instructor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95774bc9-f385-475f-9dd2-8e45f56b478e" absoluteBounds="1.6400000000000001, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c706dca5-7d6a-4886-b275-f75db0a0e822" absoluteBounds="3.625, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/KarateSchoolConnectionsDataContext/NetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7dbfc4b-7e1f-41e9-bf94-23cbc7ab1194" absoluteBounds="3.6399999999999997, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 3.875); (4.625 : 3.56859537760417); (2.625 : 3.56859537760417); (2.625 : 3.32859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KarateSchoolConnectionsDataContext/NetUser/NetUser_Instructor" />
+      <nodes>
+        <classShapeMoniker Id="c706dca5-7d6a-4886-b275-f75db0a0e822" />
+        <classShapeMoniker Id="29bbf50d-8a46-493d-9a43-87f888391e9a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5bc65651-438d-481a-8b7b-20ec7ede26d1" absoluteBounds="0.5, 3.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/KarateSchoolConnectionsDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45777ef7-c38d-49e1-8caa-4ca0fa6dc8f3" absoluteBounds="0.51500000000000012, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 4.66429768880208); (2.5 : 4.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KarateSchoolConnectionsDataContext/NetUser/NetUser_Member" />
+      <nodes>
+        <classShapeMoniker Id="c706dca5-7d6a-4886-b275-f75db0a0e822" />
+        <classShapeMoniker Id="5bc65651-438d-481a-8b7b-20ec7ede26d1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="20fcc9c6-18a0-4cef-9b16-afc06f82e74a" absoluteBounds="4.25, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/KarateSchoolConnectionsDataContext/Section" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d869f2c6-9f92-45b3-b849-d81d4824768e" absoluteBounds="4.265, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.9375 : 3.875); (4.9375 : 2.4631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KarateSchoolConnectionsDataContext/NetUser/NetUser_Section" />
+      <nodes>
+        <classShapeMoniker Id="c706dca5-7d6a-4886-b275-f75db0a0e822" />
+        <classShapeMoniker Id="20fcc9c6-18a0-4cef-9b16-afc06f82e74a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.03125 : 3.75); (1.03125 : 1.09375); (4.25 : 1.09375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KarateSchoolConnectionsDataContext/Member/Member_Section" />
+      <nodes>
+        <classShapeMoniker Id="5bc65651-438d-481a-8b7b-20ec7ede26d1" />
+        <classShapeMoniker Id="20fcc9c6-18a0-4cef-9b16-afc06f82e74a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
